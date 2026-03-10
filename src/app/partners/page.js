@@ -5,6 +5,7 @@ import PartnerHero from "@/components/Partners/PartnerHero";
 import PartnerOrganizations from "@/components/Partners/PartnerOrganizations";
 import PartnershipCategories from "@/components/Partners/PartnershipCategories";
 import WhatYouGet from "@/components/Partners/WhatYouGet";
+import AeroClubCollab from "@/components/Partners/AeroClubCollab";
 
 export default function PartnersPage() {
   return (
@@ -14,6 +15,7 @@ export default function PartnersPage() {
       <PartnershipCategories />
       <WhatYouGet />
       <DownloadBrochure />
+      <AeroClubCollab />
       <PartnerOrganizations />
       <BecomeSponsor />
     </>
