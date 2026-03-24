@@ -14,25 +14,25 @@ export default function Secretariat() {
       function: "School Registrations",
       person: "TBD",
       email: "schools@thecso.in",
-      phone: "TBD",
+      phone: "+91 92112 29927",
     },
     {
       function: "Partnerships & Sponsorships",
       person: "TBD",
       email: "partnerships@thecso.in",
-      phone: "TBD",
+      phone: "+91 92112 29927",
     },
     {
       function: "Expert Committee Coordination",
       person: "TBD",
       email: "experts@thecso.in",
-      phone: "TBD",
+      phone: "+91 92112 29927",
     },
     {
       function: "Media & Communications",
       person: "TBD",
       email: "media@thecso.in",
-      phone: "TBD",
+      phone: "+91 92112 29927",
     },
   ];
 

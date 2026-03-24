@@ -42,7 +42,7 @@ const faqs = [
   {
     question: "Which zone does my state fall under?",
     answer:
-      "India is divided into 5 zones for NAO: North (HP, Punjab, Haryana, Uttarakhand, UP), East (Bihar, Jharkhand, WB, Odisha + all NE states), West (Rajasthan, Gujarat, Maharashtra, Goa, MP, Chhattisgarh), South (AP, Telangana, Karnataka, TN, Kerala), and UT Zone (all 8 Union Territories). Check the Zone Map on this page for details.",
+      "India is divided into 5 zones for NAO: North (HP, Punjab, Haryana, Uttarakhand, UP), East (Bihar, Jharkhand, WB, Odisha + all NE states), West (Rajasthan, Gujarat, Maharashtra, Goa, MP, Chhattisgarh), South (AP, Telangana, Karnataka, TN, Kerala), and UT Zone (all 8 Union Territories).",
     highlighted: false,
   },
 ];

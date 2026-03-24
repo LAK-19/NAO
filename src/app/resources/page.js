@@ -15,7 +15,7 @@ export default function ResourcesPage() {
       <Categories />
       {/* <VideoTutorials /> */}
       <ExternalLinks />
-      <LatestUpdates />
+      {/* <LatestUpdates /> */}
       <RequestResources />
       <SupportSection />
     </>
