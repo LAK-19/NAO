@@ -15,7 +15,7 @@ export default function PeoplePage() {
     <>
       <PeopleHero />
       <GovernanceStructure />
-      <AdvisoryCommittee />
+      {/* <AdvisoryCommittee /> */}
       <ExpertCommittee />
       <ExpertEligibility />
       <Secretariat />

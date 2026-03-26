@@ -9,6 +9,7 @@ export default function SchoolRegistrationPage() {
       style={{
         backgroundImage: "url('/about/About_Hero.png')",
         backgroundRepeat: "no-repeat",
+        backgroundPosition:"cover"
       }}
     >
       <div className="max-w-5xl mx-auto px-4">
@@ -23,7 +24,7 @@ export default function SchoolRegistrationPage() {
             School Registration
           </h1>
 
-          <p className="mt-3 text-gray-600 md:text-lg">
+          <p className="mt-3 text-white md:text-lg">
             Register your school for the National Aviation Olympiad. Fill out
             the form below and our team will get in touch with you.
           </p>

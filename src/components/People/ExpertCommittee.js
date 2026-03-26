@@ -2,91 +2,92 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Experts from "@/components/Experts";
 
-const domains = [
-  "Academia & Research",
-  "Aviation Industry & Airlines",
-  "Aerospace & Defence",
-  "Government & Regulatory",
-  "STEM Education & Skill Development",
-  "Drones & Emerging Technologies",
-];
+// const domains = [
+//   "Academia & Research",
+//   "Aviation Industry & Airlines",
+//   "Aerospace & Defence",
+//   "Government & Regulatory",
+//   "STEM Education & Skill Development",
+//   "Drones & Emerging Technologies",
+// ];
 
-const domainColors = {
-  Academia: '#3b82f6',
-  Aviation: '#f59e0b',
-  Aerospace: '#10b981',
-  Government: '#6366f1',
-  STEM: '#ec4899',
-  Drones: '#14b8a6',
-};
+// const domainColors = {
+//   Academia: '#3b82f6',
+//   Aviation: '#f59e0b',
+//   Aerospace: '#10b981',
+//   Government: '#6366f1',
+//   STEM: '#ec4899',
+//   Drones: '#14b8a6',
+// };
 
 export default function ExpertCommittee() {
-  const [activeDomain, setActiveDomain] = useState(domains[0]);
+  // const [activeDomain, setActiveDomain] = useState(domains[0]);
 
-  const members = [
-    {
-      name: "Prof. Ramesh Iyer",
-      designation: "HOD, Aerospace Engineering",
-      organisation: "IIT Bombay",
-      location: "Mumbai",
-      domain: "Academia & Research",
-    },
-    {
-      name: "Capt. Anil Kapoor",
-      designation: "Senior Commander",
-      organisation: "Airline Name",
-      location: "Delhi",
-      domain: "Aviation Industry & Airlines",
-    },
-    {
-      name: "Dr. Seema Gupta",
-      designation: "Scientist ‘G’",
-      organisation: "DRDO",
-      location: "Chennai",
-      domain: "Aerospace & Defence",
-    },
-    {
-      name: "Shri. Vinod Rao",
-      designation: "Joint Director General",
-      organisation: "DGCA",
-      location: "New Delhi",
-      domain: "Government & Regulatory",
-    },
-    {
-      name: "Dr. Anuradha Sen",
-      designation: "Head, Aviation Division",
-      organisation: "NSDC",
-      location: "Noida",
-      domain: "STEM Education & Skill Development",
-    },
-    {
-      name: "Mr. Prakash Mehra",
-      designation: "CEO",
-      organisation: "DroneCo",
-      location: "Bengaluru",
-      domain: "Drones & Emerging Technologies",
-    },
-    {
-      name: "Prof. Kavita Singh",
-      designation: "Principal",
-      organisation: "NIT Name",
-      location: "Pune",
-      domain: "Academia & Research",
-    },
-    {
-      name: "Ms. Rhea Chawla",
-      designation: "VP, Engineering",
-      organisation: "Airbus India",
-      location: "Hyderabad",
-      domain: "Aviation Industry & Airlines",
-    },
-  ];
+  // const members = [
+  //   {
+  //     name: "Prof. Ramesh Iyer",
+  //     designation: "HOD, Aerospace Engineering",
+  //     organisation: "IIT Bombay",
+  //     location: "Mumbai",
+  //     domain: "Academia & Research",
+  //   },
+  //   {
+  //     name: "Capt. Anil Kapoor",
+  //     designation: "Senior Commander",
+  //     organisation: "Airline Name",
+  //     location: "Delhi",
+  //     domain: "Aviation Industry & Airlines",
+  //   },
+  //   {
+  //     name: "Dr. Seema Gupta",
+  //     designation: "Scientist ‘G’",
+  //     organisation: "DRDO",
+  //     location: "Chennai",
+  //     domain: "Aerospace & Defence",
+  //   },
+  //   {
+  //     name: "Shri. Vinod Rao",
+  //     designation: "Joint Director General",
+  //     organisation: "DGCA",
+  //     location: "New Delhi",
+  //     domain: "Government & Regulatory",
+  //   },
+  //   {
+  //     name: "Dr. Anuradha Sen",
+  //     designation: "Head, Aviation Division",
+  //     organisation: "NSDC",
+  //     location: "Noida",
+  //     domain: "STEM Education & Skill Development",
+  //   },
+  //   {
+  //     name: "Mr. Prakash Mehra",
+  //     designation: "CEO",
+  //     organisation: "DroneCo",
+  //     location: "Bengaluru",
+  //     domain: "Drones & Emerging Technologies",
+  //   },
+  //   {
+  //     name: "Prof. Kavita Singh",
+  //     designation: "Principal",
+  //     organisation: "NIT Name",
+  //     location: "Pune",
+  //     domain: "Academia & Research",
+  //   },
+  //   {
+  //     name: "Ms. Rhea Chawla",
+  //     designation: "VP, Engineering",
+  //     organisation: "Airbus India",
+  //     location: "Hyderabad",
+  //     domain: "Aviation Industry & Airlines",
+  //   },
+  // ];
 
-  const filtered = members.filter((m) => m.domain === activeDomain);
+  // const filtered = members.filter((m) => m.domain === activeDomain);
 
   return (
-    <section className="py-12">
+    <section id="expertCommittee" className="py-12">
       <div className="max-w-6xl mx-auto px-4">
         {/* intro */}
         <motion.div
@@ -115,7 +116,7 @@ export default function ExpertCommittee() {
           </div>
         </motion.div>
 
-        {/* domain tabs */}
+        {/* domain tabs
         <div className="flex flex-wrap justify-start gap-3 mb-8 max-w-[50%] ">
           {domains.map((d) => (
             <button
@@ -130,9 +131,9 @@ export default function ExpertCommittee() {
               {d}
             </button>
           ))}
-        </div>
+        </div> */}
 
-        {/* grid of filtered members */}
+        {/* grid of filtered members
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {filtered.map((m, i) => (
             <motion.div
@@ -143,8 +144,7 @@ export default function ExpertCommittee() {
               transition={{ delay: i * 0.05 }}
               className="bg-white rounded-lg p-6 shadow-sm text-center flex flex-col items-center hover:shadow-lg hover:scale-105 transition-transform transition-shadow duration-300 min-h-[260px] relative border-l-4"
             >
-              {/* domain colour border and badge */}
-              <span
+             
                 className="absolute bottom-0 right-0 mb-2 mr-2 px-2 py-1 text-xs font-semibold rounded-full text-white"
                 style={{
                   backgroundColor:
@@ -152,7 +152,7 @@ export default function ExpertCommittee() {
                 }}
               >
                 {m.domain.split(' ')[0]}
-              </span>
+              </>
               <div className="h-20 w-20 bg-gray-200 rounded-full mx-auto mb-4 flex items-center justify-center">
                 <span className="text-gray-400">👤</span>
               </div>
@@ -164,7 +164,9 @@ export default function ExpertCommittee() {
               <p className="text-xs text-gray-400 mt-2">{m.location}</p>
             </motion.div>
           ))}
-        </div>
+        </div> */}
+
+        <Experts/>
       </div>
     </section>
   );

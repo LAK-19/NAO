@@ -10,7 +10,7 @@ const cards = [
     bg: "bg-[#2894d1]",
     text: "text-white",
     button: "Register Your School",
-    href: "",
+    href: "/school-registration",
     steps: [
       {
         title: "Authorization",
@@ -36,7 +36,7 @@ const cards = [
     bg: "bg-yellow",
     text: "text-blue",
     button: "Register as an Expert",
-    href: "",
+    href: "/expert-registration",
     steps: [
       {
         title: "Eligibility",
@@ -58,7 +58,7 @@ const cards = [
     bg: "bg-[#0061e5]",
     text: "text-white",
     button: "Register as Individual",
-    href: "",
+    href: "/student-registration",
     steps: [
       {
         title: "Eligibility",
@@ -80,7 +80,7 @@ const cards = [
     bg: "bg-green-500",
     text: "text-white",
     button: "Register as Volunteer",
-    href: "",
+    href: "/volunteer-registration",
     steps: [
       {
         title: "Expression of Interest",

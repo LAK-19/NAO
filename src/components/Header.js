@@ -157,27 +157,30 @@ export default function Header() {
 
           {/* Desktop Navigation */}
           <nav className="hidden md:flex gap-8 xl:gap-10">
-            {navItems.map((item, index) => (
-              <motion.div
-                key={item.label}
-                initial={{ y: 8, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ delay: index * 0.08 }}
-              >
-                <Link
-                  href={item.href}
-                  className={`transition-colors duration-300 ${
-                    pathname === item.href
-                      ? `font-bold ${isScrolled ? "text-black" : "text-white"}`
-                      : isScrolled || isHome
-                        ? "hover:text-yellow text-black"
-                        : "hover:text-yellow text-white"
-                  }`}
+            {navItems.map((item, index) => {
+              const isActive = pathname === item.href;
+              return (
+                <motion.div
+                  key={item.label}
+                  initial={{ y: 8, opacity: 0 }}
+                  animate={{ y: 0, opacity: 1 }}
+                  transition={{ delay: index * 0.08 }}
                 >
-                  {item.label}
-                </Link>
-              </motion.div>
-            ))}
+                  <Link
+                    href={item.href}
+                    className={`transition-colors duration-300 ${
+                      isHome
+                        ? `${isActive ? "font-bold" : ""} text-black`
+                        : isScrolled
+                          ? `${isActive ? "font-bold" : ""} text-black`
+                          : `${isActive ? "font-bold" : ""} text-white`
+                    }`}
+                  >
+                    {item.label}
+                  </Link>
+                </motion.div>
+              );
+            })}
           </nav>
 
           {/* Mobile Menu Button */}
