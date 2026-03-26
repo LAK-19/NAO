@@ -4,13 +4,13 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 
 const committeeMembers = [
-  {
-    name: "Prof. Gopal M. Kamath",
-    designation: "Head, Department of Aerospace Engineering",
-    organization: "IIT Kanpur",
-    city: "Kanpur",
-    image: "/experts/KAMATH_Gopal_M.jpg",
-  },
+  // {
+  //   name: "Prof. Gopal M. Kamath",
+  //   designation: "Head, Department of Aerospace Engineering",
+  //   organization: "IIT Kanpur",
+  //   city: "Kanpur",
+  //   image: "/experts/KAMATH_Gopal_M.jpg",
+  // },
   {
     name: "Wg. Cdr. Prem Kumar Garg (Retd.)",
     designation: "Chief Executive Officer & Accountable Manager",
@@ -26,20 +26,20 @@ const committeeMembers = [
     city: "Delhi",
     image: "/experts/Sameep.webp",
   },
-  {
-    name: "Padma Shri Dr. H. C. Verma",
-    designation: "Former Professor",
-    organization: "Department of Physics, IIT Kanpur",
-    city: "Kanpur",
-    image: "/experts/hc-verma-bw.jpg",
-  },
-  {
-    name: "Padma Shri Anand Kumar",
-    designation: "Founder",
-    organization: "Super30",
-    city: "Delhi",
-    image: "/experts/akumae1727936742828.jpg",
-  },
+  // {
+  //   name: "Padma Shri Dr. H. C. Verma",
+  //   designation: "Former Professor",
+  //   organization: "Department of Physics, IIT Kanpur",
+  //   city: "Kanpur",
+  //   image: "/experts/hc-verma-bw.jpg",
+  // },
+  // {
+  //   name: "Padma Shri Anand Kumar",
+  //   designation: "Founder",
+  //   organization: "Super30",
+  //   city: "Delhi",
+  //   image: "/experts/akumae1727936742828.jpg",
+  // },
   {
     name: "Dr. Sudhir Mishra",
     designation: "Ex-Director",
@@ -54,20 +54,20 @@ const committeeMembers = [
     city: "Chennai",
     image: "/experts/APJM.webp",
   },
-  {
-    name: "Prof. R. K. Pant",
-    designation: "HoD",
-    organization: "IIT Bombay",
-    city: "Mumbai",
-    image: "/experts/pant.jpg",
-  },
-  {
-    name: "Dr. Rakesh Singh",
-    designation: "Scientist",
-    organization: "Defence Research and Development Organization (DRDO)",
-    city: "Delhi",
-    image: "/experts/Rakesh Kumar.jpg",
-  },
+  // {
+  //   name: "Prof. R. K. Pant",
+  //   designation: "HoD",
+  //   organization: "IIT Bombay",
+  //   city: "Mumbai",
+  //   image: "/experts/pant.jpg",
+  // },
+  // {
+  //   name: "Dr. Rakesh Singh",
+  //   designation: "Scientist",
+  //   organization: "Defence Research and Development Organization (DRDO)",
+  //   city: "Delhi",
+  //   image: "/experts/Rakesh Kumar.jpg",
+  // },
   {
     name: "Shri. Vivek Kulkarni",
     designation: "Secretary",
