@@ -14,7 +14,7 @@ const stats = [
   },
   {
     icon: "/glance/1.svg",
-    text: "1,00,000+ Students participating",
+    text: "1,50,000+ Students participating",
   },
   {
     icon: "/glance/1.svg",
@@ -34,7 +34,11 @@ const stats = [
   },
   {
     icon: "/glance/1.svg",
-    text: "TOP 5 Winners' education sponsored*",
+    text: "145 free drone pilot licenses",
+  },
+  {
+    icon: "/glance/1.svg",
+    text: "More scholarships, awards and take-aways to be updated",
   },
 ];
 
@@ -57,13 +61,17 @@ export default function NAOAtAGlance() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="mt-4 font-medium md:text-lg max-w-3xl mx-auto text-center "
+          className="mt-4 font-light md:text-lg max-w-3xl mx-auto text-left "
         >
-          The National Aviation Olympiad (NAO), organized by the Centre of
-          Scientific Outreach (CSO), aims to build awareness about aviation
-          while preparing students for a future-ready workforce. The Olympiad
-          will also open doors for young people to explore new technologies and
-          career opportunities in the aviation sector.
+          <span className="font-bold">Vision</span><br/>
+          Make aviation education accessible, aspirational, and impactful
+          particularly reaching rural India<br/><br/>
+           <span className="font-bold">Mission</span><br/> 
+          To build a nationwide
+          ecosystem that makes aviation education accessible by enabling
+          schools, empowering students through structured learning pathways, and
+          fostering curiosity via hands-on exposure, mentorship, and
+          experiential programs.
         </motion.p>
       </div>
 
@@ -80,7 +88,7 @@ export default function NAOAtAGlance() {
         >
           {stats.map((item, index) => (
             <div key={index} className="mx-2 ">
-              <div className="w-60 h-64 rounded-3xl bg-[#964090] text-white p-6 flex flex-col  shadow-md">
+              <div className="w-60 h-68 rounded-3xl bg-[#964090] text-white p-6 flex flex-col  shadow-md">
                 {/* Icon */}
                 <div className="mb-6">
                   <img

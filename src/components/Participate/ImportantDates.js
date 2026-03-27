@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 
 export default function ImportantDates() {
   const dates = [
-    { event: "School Registration Opens", date: "17 October 2026" },
+    { event: "School Registration Opens", date: "17 October 2025" },
     { event: "Mock Tests Available", date: "From 15 April 2026" },
-    { event: "Student Registration Deadline", date: "31 July 2026" },
+    { event: "Registration Deadline", date: "31 July 2026" },
     { event: "Phase 1 — North Zone", date: "19 August 2026" },
     { event: "Phase 1 — East Zone", date: "20 August 2026" },
     { event: "Phase 1 — West Zone", date: "21 August 2026" },

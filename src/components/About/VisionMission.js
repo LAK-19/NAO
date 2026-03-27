@@ -28,7 +28,7 @@ export default function VisionMission() {
         <HorizontalBlock
           title="Mission"
           image="/about/vision/Mission.svg"
-          text="To establish NAO as India’s premier aviation talent pipeline – empowering students with knowledge, exposure, skills, and opportunities to shape the future of aviation, aerospace, and emerging air mobility technologies while contributing to global aviation excellence"
+          text="To build a nationwide ecosystem that makes aviation education accessible by enabling schools, empowering students through structured learning pathways, and fostering curiosity via hands-on exposure, mentorship, and experiential programs."
         />
       </div>
     </section>

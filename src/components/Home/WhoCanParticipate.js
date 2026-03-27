@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FaSchool, FaUserGraduate } from 'react-icons/fa';
+import { FaSchool, FaUserGraduate } from "react-icons/fa";
 
 export default function WhoCanParticipate() {
   return (
@@ -23,7 +23,8 @@ export default function WhoCanParticipate() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="text-lg mb-8 text-gray-700 max-w-3xl mx-auto tracking-wide"
         >
-          NAO is open to all Indian students enrolled in Classes 8 through 12 in any recognized school across India.
+          NAO is open to all Indian students enrolled in Classes 8 through 12 in
+          any recognized school across India.
         </motion.p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative">
@@ -43,7 +44,8 @@ export default function WhoCanParticipate() {
               Group 1: Classes 8, 9 &amp; 10
             </h3>
             <p className="text-sm opacity-90">
-              Minimum participation: 35 students required per school for onboarding.
+              Minimum participation: 10 students required per school for
+              onboarding.
             </p>
           </motion.div>
           <motion.div
@@ -62,7 +64,8 @@ export default function WhoCanParticipate() {
               Group 2: Classes 11 &amp; 12
             </h3>
             <p className="text-sm opacity-90">
-              Minimum participation: 15 students required per school for onboarding.
+              Minimum participation: 5 students required per school for
+              onboarding.
             </p>
           </motion.div>
         </div>
@@ -75,7 +78,8 @@ export default function WhoCanParticipate() {
           className="mt-8 text-sm text-gray-600 max-w-3xl mx-auto tracking-wide"
         >
           Students participate through their registered school. Individual
-          registrations are accepted for homeschooled, NIOS, international, and
+          registrations are accepted for homeschooled, NIOS, international,
+          self-motivated students via non-participating schools and
           embassy-nominated students.
         </motion.p>
       </div>

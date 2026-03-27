@@ -18,24 +18,24 @@ export default function Objectives() {
 
         <div className="grid md:grid-cols-2 gap-6 mt-8">
           <Objective
-            title="Inspiration"
-            text="Inspire and nurture students through a structured Olympiad, mentorship, and exposure programs."
+            title="Awareness Creation"
+            text=" To promote aviation and aerospace as attractive career options."
           />
           <Objective
-            title="Career Awareness"
-            text="Introduce students to 150+ aviation pathways across flying, MRO, aerospace engineering, ATC, airport operations, drones, and space. "
+            title="Talent Identification"
+            text="To discover students with aptitude in science, technology, engineering, and mathematics (STEM) with a focus on aviation."
           />
           <Objective
-            title="Skill Building"
-            text="Develop foundational competencies in aeronautics, problem-solving, systems thinking, safety, and innovation. "
+            title="Innovation Stimulation"
+            text="To encourage students to solve real-world challenges in aviation—such as sustainability, safety, and air mobility."
           />
           <Objective
-            title="Exposure"
-            text="Provide students with experiential learning through workshops, airport visits, simulators, hangar tours, and industry interactions. "
+            title="Equal Opportunity & Inclusion"
+            text="To reach students across metros, Tier-2, Tier-3 cities, and rural India while actively promoting female participation and encouraging girls to pursue careers in aviation."
           />
           <Objective
-            title="National Workforce Pipeline"
-            text="Build a structured feeder system supporting India’s growing need for aviation professionals."
+            title="Industry-Academia Linkage"
+            text=" To create pathways for students to interact with aviation professionals, institutions, and industries."
             full
           />
         </div>

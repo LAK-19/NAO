@@ -36,23 +36,30 @@ export default function ParticipateHero() {
             {/* CTA BUTTONS */}
             {/* add forms here */}
             <motion.div
-              className="mt-4 md:mt-6 flex  flex-wrap gap-2 md:gap-4"
+              className="mt-4 md:mt-6 flex flex-wrap gap-2 md:gap-4"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3 }}
             >
               <Link
                 href="/school-registration"
-                className="bg-yellow w-full md:w-fit hover:bg-[#e6c400] text-black font-medium px-6 py-2.5 rounded-lg transition-colors text-center"
+                className="bg-yellow w-[40%] hover:bg-[#e6c400] text-black font-medium px-6 py-2.5 rounded-lg transition-colors text-center"
               >
                 Register Your School
               </Link>
 
               <Link
                 href="/expert-registration"
-                className="bg-red w-full md:w-fit hover:bg-[#b92520] text-white font-medium px-6 py-2.5 rounded-lg transition-colors text-center"
+                className="bg-red w-[40%] hover:bg-[#b92520] text-black font-medium px-6 py-2.5 rounded-lg transition-colors text-center"
               >
                 Register as an Expert
+              </Link>
+
+              <Link
+                href="/student-registration"
+                className="bg-orange w-[40%] hover:bg-[#e65c00] text-black font-medium px-6 py-2.5 rounded-lg transition-colors text-center"
+              >
+                Individual Register
               </Link>
             </motion.div>
           </motion.div>

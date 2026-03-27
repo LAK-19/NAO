@@ -31,7 +31,7 @@ export default function GetInvolved() {
 
               <div className="flex flex-col gap-3 mt-6">
                 <a
-                  href=""
+                  href="/school-registration"
                   target="_blank"
                   className="inline-block bg-yellow hover:bg-[#e6c400] text-black font-medium px-6 py-2.5 rounded-lg text-center transition-colors"
                 >
@@ -44,7 +44,7 @@ export default function GetInvolved() {
                   Partner With Us
                 </Link>
                 <a
-                  href="/docs/NAO_2026_Brochure.pdf"
+                  href="/docs/NAO_2026_Information_Brochure.pdf"
                   target="_blank"
                   className="inline-block bg-blue hover:bg-blue-700 text-white font-medium px-6 py-2.5 rounded-lg text-center transition-colors"
                 >

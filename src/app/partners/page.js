@@ -13,7 +13,7 @@ export default function PartnersPage() {
       <PartnerHero />
       <WhyPartner />
       <PartnershipCategories />
-      <WhatYouGet />
+      {/* <WhatYouGet /> */}
       <DownloadBrochure />
       <AeroClubCollab />
       <PartnerOrganizations />

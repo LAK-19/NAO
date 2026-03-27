@@ -21,8 +21,8 @@ const cards = [
         desc: "School enrolls eligible students from Classes 8–12 with required documentation and consent forms.",
       },
       {
-        title: "Examination",
-        desc: "School receives examination materials and guidelines for conducting Phase 1 examination at their premises.",
+        title: "Fees Collection",
+        desc: "School collects the fees from registered students on behalf of NAO Secretariat. The school retains 20% of the fees to cover cost of conduction of examination at their premises.",
       },
       {
         title: "Note",
@@ -40,7 +40,7 @@ const cards = [
     steps: [
       {
         title: "Eligibility",
-        desc: "Professionals from academia (40%), industry (30%), or policy/regulatory sectors (30%) can apply.",
+        desc: "Professionals from academia, industry, or policy/regulatory sectors can apply.",
       },
       {
         title: "Review",
@@ -65,8 +65,8 @@ const cards = [
         desc: "For homeschooled students, NIOS students, international or embassy-nominated candidates, and students from non‑participating schools.",
       },
       {
-        title: "Registration",
-        desc: "Student registers individually with valid ID (Aadhaar/Passport), parent/guardian consent form, and IT undertaking form.",
+        title: "Registration and fees",
+        desc: "Student registers individually with valid ID (Aadhaar/Passport), parent/guardian consent form, and IT undertaking form and pay the registration fees.",
       },
       {
         title: "Examination",

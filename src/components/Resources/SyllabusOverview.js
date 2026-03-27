@@ -45,7 +45,7 @@ export default function SyllabusOverview() {
                   <li>Airports</li>
                   <li>Regulators</li>
                   <li>Aviation History</li>
-                  <li>Aviation Incidents</li>
+                  <li>Aviation Safety</li>
                 </ol>
               </div>
               <div>

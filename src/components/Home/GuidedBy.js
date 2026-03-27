@@ -78,7 +78,7 @@ export default function GuidedBy() {
               },
               {
                 src: "/guided/04.svg",
-                label: "30%\nBureaucracy",
+                label: "30%\nPolicy Makers",
               },
             ].map((item, index) => (
               <motion.div

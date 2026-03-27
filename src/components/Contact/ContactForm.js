@@ -17,14 +17,14 @@ export default function ContactForm() {
           <div className="w-full lg:w-3/5 bg-[#f4f7fb] rounded-3xl p-6 lg:p-12">
             <h3 className="text-2xl font-bold mb-8">Contact Form</h3>
 
-            <form className="space-y-6">
-              {/* row 1 */}
+            {/* <form className="space-y-6">
+              
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <Input name="fullname" label="Full Name" required />
                 <Input name="phone" label="Phone Number" required />
               </div>
 
-              {/* row 2 */}
+              
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <Input name="email" label="Email Address" type="email" required />
                 <Select
@@ -44,7 +44,7 @@ export default function ContactForm() {
                 />
               </div>
 
-              {/* row 3 */}
+             
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <Input name="organization" label="School / Organization Name" />
                 <Select
@@ -92,10 +92,9 @@ export default function ContactForm() {
                 />
               </div>
 
-              {/* subject */}
               <Input name="subject" label="Subject" required />
 
-              {/* message */}
+            
               <div>
                 <label className="text-sm font-medium mb-1 block">Message</label>
                 <textarea
@@ -115,7 +114,14 @@ export default function ContactForm() {
               >
                 Submit
               </button>
-            </form>
+            </form> */}
+
+            <iframe
+              aria-label="NAO Contact Us"
+              frameBorder="0"
+              style={{height:"500px",width:"99%",border:"none"}}
+              src="https://forms.zohopublic.in/cso/form/ContactUs/formperma/VEgeo2wr2w8CTCrP29tYCHgUsc_Er7-sy4BlsY1REuA"
+            ></iframe>
           </div>
 
           {/* Map Embed */}
@@ -141,11 +147,9 @@ export default function ContactForm() {
 function Input({ label, name, type = "text", required }) {
   return (
     <div>
-      <label
-        htmlFor={name}
-        className="text-sm mb-1 block text-gray-500"
-      >
-        {label}{required && <span className="text-red-500"> *</span>}
+      <label htmlFor={name} className="text-sm mb-1 block text-gray-500">
+        {label}
+        {required && <span className="text-red-500"> *</span>}
       </label>
       <input
         id={name}
@@ -162,11 +166,9 @@ function Input({ label, name, type = "text", required }) {
 function Select({ label, name, options, required }) {
   return (
     <div>
-      <label
-        htmlFor={name}
-        className="text-sm mb-1 block text-gray-500"
-      >
-        {label}{required && <span className="text-red-500"> *</span>}
+      <label htmlFor={name} className="text-sm mb-1 block text-gray-500">
+        {label}
+        {required && <span className="text-red-500"> *</span>}
       </label>
       <select
         id={name}

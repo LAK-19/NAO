@@ -15,7 +15,7 @@ const navItems = [
   { label: "Participate", href: "/participate" },
   { label: "Resources", href: "/resources" },
   { label: "Partners", href: "/partners" },
-  { label: "People", href: "/people" },
+  // { label: "People", href: "/people" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -38,12 +38,21 @@ const socialIcons = [
   },
 ];
 
+const phoneNumbers = [
+  "+91- 92112 29927",
+  "+91- 97739 87836",
+  "+91- 98765 43210",
+];
+
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [currentPhoneIndex, setCurrentPhoneIndex] = useState(0);
+  const [isHovered, setIsHovered] = useState(false);
+
+  const currentPhone = phoneNumbers[currentPhoneIndex];
 
   const router = useRouter();
-
   const pathname = usePathname();
 
   const isHome =
@@ -52,17 +61,28 @@ export default function Header() {
     pathname === "/terms-and-conditions" ||
     pathname === "/refund-policy";
 
+  // Timer: cycle through numbers only when not hovered
+  useEffect(() => {
+    if (isHovered) return;
+
+    const interval = setInterval(() => {
+      setCurrentPhoneIndex((prev) => (prev + 1) % phoneNumbers.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [isHovered, phoneNumbers.length]);
+
+  // Scroll listener
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
-
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    <header className="w-full  fixed top-0 z-50 overflow-hidden">
+    <header className="w-full fixed top-0 z-50 overflow-hidden">
       {/* Top Gradient Bar */}
       <motion.div
         initial={{ y: -16, opacity: 0 }}
@@ -82,12 +102,21 @@ export default function Header() {
           </span>
 
           <div className="hidden md:flex items-center gap-4">
-            <span>+91- 92112 29927 | nao@thecso.in</span>
+            {/* Phone number with hover pause */}
+            <span
+              onMouseEnter={() => setIsHovered(true)}
+              onMouseLeave={() => setIsHovered(false)}
+              className="cursor-default"
+            >
+              {currentPhone}
+            </span>
+            <span>| nao@thecso.in</span>
 
             <div className="flex gap-2">
               {socialIcons.map((icon, i) => (
                 <motion.a
                   key={i}
+                  target="_blank"
                   href={icon.href}
                   className="w-6 h-6 hover:scale-110 transition-all duration-300 relative"
                 >
@@ -131,7 +160,7 @@ export default function Header() {
             className="flex items-end gap-1 cursor-pointer"
             onClick={() => router.push("/")}
           >
-            <div className="relative  h-10 lg:h-16 w-24 lg:w-40">
+            <div className="relative h-10 lg:h-16 w-24 lg:w-40">
               <Image
                 src={
                   isHome || isScrolled
@@ -144,15 +173,6 @@ export default function Header() {
                 className="object-contain object-left"
               />
             </div>
-
-            {/* 2026 badge */}
-            {/* <span
-              className={`text-xs lg:text-xs leading-3 md:leading-2.5 font-semibold transition-colors ${
-                isScrolled || isHome ? "" : "text-white"
-              } ${isHome ? "leading-3 md:leading-2.5" : "leading-3.5"} `}
-            >
-              2026
-            </span> */}
           </motion.div>
 
           {/* Desktop Navigation */}
@@ -225,7 +245,7 @@ export default function Header() {
               </button>
 
               {/* Navigation */}
-              <nav className="flex  flex-col gap-6">
+              <nav className="flex flex-col gap-6">
                 {navItems.map((item, i) => (
                   <motion.div
                     key={item.label}
@@ -250,8 +270,8 @@ export default function Header() {
               <div className="h-px bg-black/10 mb-6" />
 
               {/* Contact Info (Mobile) */}
-              <div className="mt-6  text-[#2d333a] space-y-2">
-                <p>+91- 92112 29927</p>
+              <div className="mt-6 text-[#2d333a] space-y-2">
+                <p>{currentPhone}</p>
                 <p>nao@thecso.in</p>
 
                 <div className="flex gap-3 pt-2">
@@ -263,14 +283,14 @@ export default function Header() {
                   <a
                     href="https://wa.me/+919211229927"
                     target="_blank"
-                    className="w-8 h-8 bg-[#ffffff] rounded-full  flex justify-center items-center  relative"
+                    className="w-8 h-8 bg-[#ffffff] rounded-full flex justify-center items-center relative"
                   >
                     <FaWhatsapp className="text-[#384f5d] text-xl" />
                   </a>
                   <a
                     href="mailto:nao@thecso.in"
                     target="_blank"
-                    className="w-8 h-8 bg-[#ffffff] rounded-full  flex justify-center items-center  relative"
+                    className="w-8 h-8 bg-[#ffffff] rounded-full flex justify-center items-center relative"
                   >
                     <MdOutlineEmail className="text-[#384f5d] text-xl" />
                   </a>

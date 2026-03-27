@@ -3,23 +3,23 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-const tiers = [
-  {
-    title: "Lead Sponsorship",
-    details:
-      "Primary branding across all NAO events and materials, exclusive logo placement, keynote speaking slots, and high‑visibility recognition throughout the year.",
-  },
-  {
-    title: "Content Sponsorship",
-    details:
-      "Support specific segments such as workshops, webinars, or curriculum modules with co‑branding and content ownership opportunities.",
-  },
-  {
-    title: "Demographic Sponsorship",
-    details:
-      "Target partnerships focused on particular groups (e.g. girls, rural schools, or higher‑education aspirants) with tailored programs and reporting.",
-  },
-];
+// const tiers = [
+//   {
+//     title: "Lead Sponsorship",
+//     details:
+//       "Primary branding across all NAO events and materials, exclusive logo placement, keynote speaking slots, and high‑visibility recognition throughout the year.",
+//   },
+//   {
+//     title: "Content Sponsorship",
+//     details:
+//       "Support specific segments such as workshops, webinars, or curriculum modules with co‑branding and content ownership opportunities.",
+//   },
+//   {
+//     title: "Demographic Sponsorship",
+//     details:
+//       "Target partnerships focused on particular groups (e.g. girls, rural schools, or higher‑education aspirants) with tailored programs and reporting.",
+//   },
+// ];
 
 export default function PartnershipCategories() {
   const [openIndex, setOpenIndex] = useState(null);
@@ -49,7 +49,7 @@ export default function PartnershipCategories() {
         </motion.p>
 
         {/* Accordion */}
-        <div className="space-y-3">
+        {/* <div className="space-y-3">
           {tiers.map((tier, idx) => (
             <div
               key={idx}
@@ -73,7 +73,7 @@ export default function PartnershipCategories() {
               )}
             </div>
           ))}
-        </div>
+        </div> */}
 
         {/* CTA to download brochure */}
         <div className="mt-8 text-center">

@@ -34,16 +34,16 @@ export default function FeeStructure() {
                   <th colSpan={2} className="p-4 text-center uppercase tracking-wide">
                     Early Bird (Till 30 Apr 2026)
                   </th>
-                  <th colSpan={2} className="p-4 text-center uppercase tracking-wide">
+                  {/* <th colSpan={2} className="p-4 text-center uppercase tracking-wide">
                     Regular (1 May – 15 Jul 2026)
-                  </th>
+                  </th> */}
                 </tr>
                 <tr className="bg-gradient-to-r from-[#1a3e6b] to-[#274d7f] text-white">
                   <th />
                   <th className="p-4 text-center font-semibold">Boys</th>
                   <th className="p-2 text-center font-semibold">Girls</th>
-                  <th className="p-2 text-center font-semibold">Boys</th>
-                  <th className="p-2 text-center font-semibold">Girls</th>
+                  {/* <th className="p-2 text-center font-semibold">Boys</th>
+                  <th className="p-2 text-center font-semibold">Girls</th> */}
                 </tr>
               </thead>
               <tbody className="text-gray-800">
@@ -52,25 +52,25 @@ export default function FeeStructure() {
                     cat: "Private Schools",
                     earlyBoys: "₹ 200",
                     earlyGirls: "₹ 160",
-                    regBoys: "₹ 250",
-                    regGirls: "₹ 200",
-                    icon: "🏫"
+                    // regBoys: "₹ 250",
+                    // regGirls: "₹ 200",
+                    // icon: "🏫"
                   },
                   {
                     cat: "Government & Aided Schools",
                     earlyBoys: "₹ 75",
                     earlyGirls: "₹ 50",
-                    regBoys: "₹ 100",
-                    regGirls: "₹ 75",
-                    icon: "🏛️"
+                    // regBoys: "₹ 100",
+                    // regGirls: "₹ 75",
+                    // icon: "🏛️"
                   },
                   {
                     cat: "Individual Registration (Special Case)",
-                    earlyBoys: "₹ 500",
-                    earlyGirls: "₹ 400",
-                    regBoys: "₹ 750",
-                    regGirls: "₹ 600",
-                    icon: "🧑‍🎓"
+                    earlyBoys: "₹ 250",
+                    earlyGirls: "₹ 200",
+                    // regBoys: "₹ 750",
+                    // regGirls: "₹ 600",
+                    // icon: "🧑‍🎓"
                   },
                 ].map((row, idx, arr) => (
                   <motion.tr
@@ -87,8 +87,8 @@ export default function FeeStructure() {
                     </td>
                     <td className="p-4 text-center bg-blue-50 text-sm font-semibold">{row.earlyBoys}</td>
                     <td className="p-4 text-center bg-blue-50 text-sm font-semibold">{row.earlyGirls}</td>
-                    <td className="p-4 text-center bg-green-50 text-sm font-semibold">{row.regBoys}</td>
-                    <td className="p-4 text-center bg-green-50 text-sm font-semibold">{row.regGirls}</td>
+                    {/* <td className="p-4 text-center bg-green-50 text-sm font-semibold">{row.regBoys}</td>
+                    <td className="p-4 text-center bg-green-50 text-sm font-semibold">{row.regGirls}</td> */}
                   </motion.tr>
                 ))}
               </tbody>

@@ -108,8 +108,8 @@ export default function Hero() {
             },
             {
               id: 2,
-              value: "1,00,000+",
-              label: "Students Participating",
+              value: "1,50,000+",
+              label: "Expected Registrations",
               icon: "/hero/02.svg",
             },
             {
@@ -120,8 +120,8 @@ export default function Hero() {
             },
             {
               id: 4,
-              value: "145",
-              label: "National Finalists",
+              value: "1 million+",
+              label: "Engagements via Outreach",
               icon: "/hero/04.svg",
             },
           ].map((item, i) => (

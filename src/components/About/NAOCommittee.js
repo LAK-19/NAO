@@ -45,12 +45,12 @@ export default function NAOCommittee() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3 }}
         >
-          <Link
+          {/* <Link
             href="/people"
             className="bg-yellow cursor-pointer w-full md:w-fit hover:bg-[#e6c400] text-black font-medium px-6 py-2.5 rounded-lg transition-colors"
           >
             Meet Our Experts
-          </Link>
+          </Link> */}
 
           <Link
             href="/people#eligibility"

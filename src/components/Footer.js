@@ -196,6 +196,7 @@ export default function Footer() {
               {socialIcons.map((icon, i) => (
                 <a
                   key={i}
+                  target="_blank"
                   href={icon.href}
                   className="w-8 h-8 rounded-full  flex items-center justify-center hover:scale-110 transition-all duration-300"
                 >
