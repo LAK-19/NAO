@@ -43,6 +43,7 @@ export default function ParticipateHero() {
             >
               <Link
                 href="/school-registration"
+                target="_blank"
                 className="bg-yellow w-[40%] hover:bg-[#e6c400] text-black font-medium px-6 py-2.5 rounded-lg transition-colors text-center"
               >
                 Register Your School
@@ -50,6 +51,7 @@ export default function ParticipateHero() {
 
               <Link
                 href="/expert-registration"
+                target="_blank"
                 className="bg-red w-[40%] hover:bg-[#b92520] text-black font-medium px-6 py-2.5 rounded-lg transition-colors text-center"
               >
                 Register as an Expert
@@ -57,6 +59,7 @@ export default function ParticipateHero() {
 
               <Link
                 href="/student-registration"
+                target="_blank"
                 className="bg-orange w-[40%] hover:bg-[#e65c00] text-black font-medium px-6 py-2.5 rounded-lg transition-colors text-center"
               >
                 Individual Register

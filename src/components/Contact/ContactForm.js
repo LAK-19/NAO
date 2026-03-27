@@ -14,7 +14,7 @@ export default function ContactForm() {
           className="flex flex-col lg:flex-row gap-8 items-stretch"
         >
           {/* Form Panel */}
-          <div className="w-full lg:w-3/5 bg-[#f4f7fb] rounded-3xl p-6 lg:p-12">
+          <div className="w-full h-full lg:w-3/5 bg-[#f4f7fb] rounded-3xl p-6 lg:p-12">
             <h3 className="text-2xl font-bold mb-8">Contact Form</h3>
 
             {/* <form className="space-y-6">
@@ -118,8 +118,7 @@ export default function ContactForm() {
 
             <iframe
               aria-label="NAO Contact Us"
-              frameBorder="0"
-              style={{height:"500px",width:"99%",border:"none"}}
+              className="w-full min-h-[990px]"
               src="https://forms.zohopublic.in/cso/form/ContactUs/formperma/VEgeo2wr2w8CTCrP29tYCHgUsc_Er7-sy4BlsY1REuA"
             ></iframe>
           </div>
@@ -127,8 +126,16 @@ export default function ContactForm() {
           {/* Map Embed */}
           <div className="w-full lg:w-1/2 flex">
             <div className="flex-1 h-full rounded-3xl overflow-hidden">
-              <iframe
+              {/* <iframe
                 src="https://www.google.com/maps?q=NAO+Secretariat,+B-1+Third+Floor,+Greater+Kailash+Enclave+II,+New+Delhi+110048&output=embed"
+                width="100%"
+                height="100%"
+                className="border-0"
+                allowFullScreen=""
+                loading="lazy"
+              ></iframe> */}
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5617.602972543553!2d77.23748532020706!3d28.540841453930923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3171a896f6d%3A0xfce1df91ad64ac9f!2sCentre%20for%20Scientific%20Outreach!5e0!3m2!1sen!2sin!4v1774603154042!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 className="border-0"

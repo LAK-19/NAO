@@ -4,7 +4,14 @@ import { motion } from "framer-motion";
 
 export default function SchoolRegistrationPage() {
   return (
-    <section className="pt-24 md:pt-38 pb-12  bg-black">
+    <section
+      className="pt-24 md:pt-38 pb-12"
+      style={{
+        backgroundImage: "url('/about/About_Hero.png')",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+      }}
+    >
       <div className="max-w-5xl mx-auto px-4">
         {/* Heading */}
         <motion.div
@@ -26,11 +33,10 @@ export default function SchoolRegistrationPage() {
           className="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden"
         >
           {/* Responsive iframe wrapper */}
-          <div className="w-full h-[600px] md:h-[700px]">
+          <div className="w-full">
             <iframe
               aria-label="NAO Volunteer Onboarding Form"
-              frameBorder="0"
-              style={{ height: "500px", width: "99%", border: "none" }}
+              className="w-full min-h-[1200px]"
               src="https://forms.zohopublic.in/cso/form/PPLDemoClass/formperma/E1s1JkmE03DJegJbYReFpN1l_Kxc6mlh7KF2mNCZz6s"
             ></iframe>
           </div>

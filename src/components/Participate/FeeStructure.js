@@ -32,7 +32,7 @@ export default function FeeStructure() {
                 <tr className="bg-gradient-to-r from-[#12355b] to-[#1a3e6b] text-white sticky top-0 z-10">
                   <th className="p-4 text-left uppercase tracking-wide">Category</th>
                   <th colSpan={2} className="p-4 text-center uppercase tracking-wide">
-                    Early Bird (Till 30 Apr 2026)
+                    Registration Fees
                   </th>
                   {/* <th colSpan={2} className="p-4 text-center uppercase tracking-wide">
                     Regular (1 May – 15 Jul 2026)
@@ -145,8 +145,7 @@ export default function FeeStructure() {
 
           {/* Note */}
           <p className="mt-4 text-sm text-green-700 font-semibold align-middle text-center">
-            Note: <span className="font-extrabold">20% Discount</span> on Registration rates are provided for Female
-            Candidates to encourage diversity.
+            Note: To encourage diversity, a <span className="font-bold">20% registration discount</span> is available to all female applicants
           </p>
         </motion.div>
       </div>

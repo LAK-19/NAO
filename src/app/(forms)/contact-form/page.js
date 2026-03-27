@@ -4,7 +4,15 @@ import { motion } from "framer-motion";
 
 export default function SchoolRegistrationPage() {
   return (
-    <section className="pt-24 md:pt-38 pb-12  bg-black">
+    <section
+      className="pt-24 md:pt-38 pb-12"
+      style={{
+        backgroundImage: "url('/contact/Contact_Hero.png')",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
       <div className="max-w-5xl mx-auto px-4">
         {/* Heading */}
         <motion.div
@@ -13,10 +21,9 @@ export default function SchoolRegistrationPage() {
           transition={{ duration: 0.5 }}
           className="text-center mb-8"
         >
-          <h1 className="text-3xl md:text-4xl font-bold text-orange">
+          {/* <h1 className="text-3xl md:text-4xl font-bold text-orange">
             NAO Contact Us
-          </h1>
-
+          </h1> */}
         </motion.div>
 
         {/* Form Container */}
@@ -30,8 +37,7 @@ export default function SchoolRegistrationPage() {
           <div className="w-full h-[600px] md:h-[700px]">
             <iframe
               aria-label="NAO Contact Us"
-              frameBorder="0"
-              style={{ height: "500px", width: "99%", border: "none" }}
+              className="w-full min-h-[1400px]"
               src="https://forms.zohopublic.in/cso/form/ContactUs/formperma/VEgeo2wr2w8CTCrP29tYCHgUsc_Er7-sy4BlsY1REuA"
             ></iframe>
           </div>

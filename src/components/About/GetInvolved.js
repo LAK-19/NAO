@@ -51,8 +51,7 @@ export default function GetInvolved() {
                   Download Information Brochure
                 </a>
                 <a
-                  href="https://forms.zohopublic.com/example/nominateExpert"
-                  target="_blank"
+                  href="/people#eligibility"
                   className="inline-block bg-green bg-green-700 text-white font-medium px-6 py-2.5 rounded-lg text-center transition-colors"
                 >
                   Nominate an Expert

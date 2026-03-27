@@ -8,7 +8,7 @@ import Link from "next/link";
 export default function AboutHero() {
   return (
     <section
-      className="relative bg-cover bg-bottom-left md:bg-center"
+      className="relative bg-cover bg-bottom-left md:bg-center mt-6"
       style={{
         backgroundImage: "url('/about/About_Hero.png')",
         backgroundRepeat: "no-repeat",
@@ -40,12 +40,14 @@ export default function AboutHero() {
             >
               <Link 
               href="/student-registration"
+              target="_blank"
               className="bg-yellow cursor-pointer w-full md:w-fit hover:bg-[#e6c400] text-black font-medium px-6 py-2.5 rounded-lg transition-colors">
                 Register as a Student
               </Link>
 
               <Link 
               href="/school-registration"
+              target="_blank"
               className="bg-red cursor-pointer w-full md:w-fit hover:bg-[#b92520] text-white font-medium px-6 py-2.5 rounded-lg transition-colors">
                 Register as a School
               </Link>

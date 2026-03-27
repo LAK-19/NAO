@@ -8,11 +8,10 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <section
-      className="relative bg-cover "
+      className="relative bg-cover mt-5"
       style={{
         backgroundImage: "url('/hero/Hero_BG.jpg')",
         backgroundRepeat: "no-repeat",
-        backgroundPosition: "right top",
       }}
     >
       <div className="max-w-6xl  min-h-[calc(100vh-2rem)] md:min-h-[45vh] xl:min-h-[calc(100vh-3rem)] tab-height h-full mx-auto px-4 flex  items-end pt-20 md:pt-24 lg:pt-16  pb-20  relative">
@@ -46,6 +45,7 @@ export default function Hero() {
             >
               <Link
                 href="/school-registration"
+                target="_blank"
                 className="bg-yellow w-full md:w-fit hover:bg-[#e6c400] text-black font-medium px-6 py-2.5 rounded-lg transition-colors"
               >
                 Register Your School

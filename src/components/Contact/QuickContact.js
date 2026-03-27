@@ -13,7 +13,7 @@ export default function QuickContact() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
           className="text-3xl md:text-4xl text-center font-bold text-orange mb-8"
-          style={{ letterSpacing: '0.5px' }}
+          style={{ letterSpacing: "0.5px" }}
         >
           Quick Contact
         </motion.h2>
@@ -28,13 +28,47 @@ export default function QuickContact() {
           <Card
             icon={<FaEnvelope className="text-2xl text-blue" />}
             label="Email"
-            detail={<a href="mailto:nao@thecso.in" className="underline">nao@thecso.in</a>}
+            detail={
+              <a href="mailto:nao@thecso.in" className="underline">
+                nao@thecso.in
+              </a>
+            }
           />
 
           <Card
             icon={<FaPhone className="text-2xl text-blue" />}
             label="Phone"
-            detail={<a href="tel:+919211229927" className="underline">+91 92112 29927</a>}
+            detail={
+              <>
+                <a
+                  href="https://wa.me/919211229927"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-lg"
+                >
+                  +91 92112 29927
+                </a>
+                <br />
+                <a
+                  href="https://wa.me/919773987836"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-lg mt-2"
+                >
+                  +91 97739 87836
+                </a>
+                <br />
+
+                <a
+                  href="https://wa.me/919346370858"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-lg mt-2"
+                >
+                  +91 93463 70858
+                </a>
+              </>
+            }
           />
 
           <Card
@@ -42,18 +76,10 @@ export default function QuickContact() {
             label="Address"
             detail={
               <div className="space-y-1">
-                <span className="block">
-                  NAO Secretariat, 
-                </span>
-                <span className="block">
-                   B–1, Third Floor,
-                </span>
-                <span className="block">
-                  Greater Kailash Enclave II,
-                </span>
-                <span className="block">
-                  New Delhi – 110 048, India
-                </span>
+                <span className="block">NAO Secretariat,</span>
+                <span className="block">B–1, Third Floor,</span>
+                <span className="block">Greater Kailash Enclave II,</span>
+                <span className="block">New Delhi – 110 048, India</span>
               </div>
             }
           />
@@ -65,7 +91,11 @@ export default function QuickContact() {
 
 function Card({ icon, label, detail }) {
   return (
-    <motion.div whileHover={{ scale: 1.04, boxShadow: '0 10px 25px rgba(0,0,0,0.1)' }} transition={{ type: "spring", stiffness: 140 }} className="bg-white rounded-2xl shadow-sm hover:shadow-md p-6 flex items-start gap-4 border border-transparent hover:border-blue-200">
+    <motion.div
+      whileHover={{ scale: 1.04, boxShadow: "0 10px 25px rgba(0,0,0,0.1)" }}
+      transition={{ type: "spring", stiffness: 140 }}
+      className="bg-white rounded-2xl shadow-sm hover:shadow-md p-6 flex items-start gap-4 border border-transparent hover:border-blue-200"
+    >
       <div className="flex-shrink-0">
         <div className="w-10 h-10 flex items-center justify-center bg-blue-100 rounded-full">
           {icon}

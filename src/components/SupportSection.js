@@ -47,11 +47,31 @@ export default function SupportSection() {
                 {" "}
                 <FiPhone className=" text-4xl" />
               </div>
-              <a href="tel:+919211229927" className="text-lg">
+              <a
+                href="https://wa.me/919211229927"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-lg"
+              >
                 +91 92112 29927
               </a>
-              <a href="tel:+919773987836" className="text-lg mt-2">
+
+              <a
+                href="https://wa.me/919773987836"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-lg mt-2"
+              >
                 +91 97739 87836
+              </a>
+
+              <a
+                href="https://wa.me/919346370858"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-lg mt-2"
+              >
+                +91 93463 70858
               </a>
             </div>
 

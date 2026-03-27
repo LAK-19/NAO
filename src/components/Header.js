@@ -39,9 +39,9 @@ const socialIcons = [
 ];
 
 const phoneNumbers = [
-  "+91- 92112 29927",
-  "+91- 97739 87836",
-  "+91- 98765 43210",
+  "+91 92112 29927",
+  "+91 97739 87836",
+  "+91 93463 70858",
 ];
 
 export default function Header() {
